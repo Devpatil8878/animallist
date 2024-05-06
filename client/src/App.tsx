@@ -1,4 +1,4 @@
-// App.js
+
 import React, { useState, useEffect } from 'react';
 
 const App = () => {
@@ -7,7 +7,6 @@ const App = () => {
   const [editIndex, setEditIndex] = useState<any>(null);
 
   useEffect(() => {
-    // Fetch animals from server when component mounts
     fetch('http://localhost:3000/animals')
       .then(res => res.json())
       .then(data => setAnimals(data))
